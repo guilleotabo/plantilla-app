@@ -1,28 +1,28 @@
 /*
-⚠️  FORMATO FIJO PARA IA y DESARROLLADORES  ⚠️
-1. Solo reglas de estilo visual. Nada de lógica aquí.
-2. Mantener bloques delimitados con 🔽 ... 🔼.
-3. NOMENCLATURA: ids en inglés en camelCase (#resultTable), clases en kebab-case (.btn-primary).
-4. No duplicar reglas ni importar frameworks externos sin autorización.
+⚠️  FORMATO OBLIGATORIO PARA IA Y DESARROLLADORES 
+-------------------------------------------------
+1. Solo reglas de estilo visual.
+2. Mantener bloques delimitados con 🔽 ... 🔼 .
+3. No duplicar estilos existentes ni importar frameworks externos.
 */
 
-/* 🔽 BLOQUE: Estilo general */
+/* 🔽 BLOQUE: Base */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
   margin: 0;
   padding: 20px;
+  background:#f5f5f5;
 }
-/* 🔼 Fin Estilo general */
+/* 🔼 FIN BLOQUE: Base */
 
-/* 🔽 BLOQUE: Botones */
-#btnCalcular {
-  background-color: #2196f3;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 24px;
-  cursor: pointer;
+/* 🔽 BLOQUE: Botón Calcular */
+#btnCalcular{
+  background:#2196F3;
+  color:#fff;
+  border:none;
+  padding:10px 20px;
+  border-radius:4px;
+  cursor:pointer;
 }
-#btnCalcular:hover { opacity: .9; }
-/* 🔼 Fin Botones */
+#btnCalcular:hover{opacity:.9;}
+/* 🔼 FIN BLOQUE: Botón Calcular */

@@ -1,18 +1,17 @@
 <!--
-⚠️  FORMATO FIJO PARA IA y DESARROLLADORES  ⚠️
-1. Este archivo SOLO define la estructura visual (no lógica ni diseño).
-2. NUNCA eliminar bloques existentes sin autorización.
-3. Cada bloque está encuadrado con 🔽 ... 🔼  → agregar/modificar solo dentro del bloque correspondiente.
-4. No incluir librerías externas (CDN <script> o <link>) salvo que yo lo pida.
+⚠️  FORMATO OBLIGATORIO PARA IA Y DESARROLLADORES 
+-------------------------------------------------
+1. Este archivo define SOLO la estructura visual (HTML).
+2. Cada zona editable está envuelta por comentarios 🔽 ... 🔼 .
+3. La IA debe agregar/modificar contenido SOLO dentro del bloque indicado.
+4. No incluir <script> o <style> aquí (van en archivos separados).
 -->
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Calculadora de Comisiones</title>
-
-  <!-- Hoja de estilos global -->
+  <title>Mi App Base</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,21 +20,20 @@
   <header>
     <h1>Calculadora de Comisiones</h1>
   </header>
-  <!-- 🔼 Fin Encabezado -->
+  <!-- 🔼 FIN BLOQUE: Encabezado -->
 
   <!-- 🔽 BLOQUE: Acciones -->
   <section id="acciones">
     <button id="btnCalcular">Calcular</button>
   </section>
-  <!-- 🔼 Fin Acciones -->
+  <!-- 🔼 FIN BLOQUE: Acciones -->
 
   <!-- 🔽 BLOQUE: Resultados -->
   <section id="resultados">
-    <!-- La IA puede insertar la tabla de resultados acá -->
+    <!-- aquí la IA insertará resultados -->
   </section>
-  <!-- 🔼 Fin Resultados -->
+  <!-- 🔼 FIN BLOQUE: Resultados -->
 
-  <!-- Lógica de la aplicación -->
   <script src="app.js"></script>
 </body>
 </html>
