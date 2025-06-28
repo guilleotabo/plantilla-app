@@ -1,25 +1,59 @@
 # 📦 Plantilla‑App (HTML + CSS + JS)
 
-Base minimalista para proyectos que generarán código con IA (Codex, ChatGPT, etc.).
+Plantilla mínima pero **completa** para apps front‑end simples generadas (o mantenidas) con IA.
 
-## 🧩 REGLAS GENERALES
-
-1. **Separación estricta**  
-   - `index.html` → estructura visual  
-   - `style.css`  → diseño  
-   - `app.js`     → lógica  
-2. **Bloques delimitados** con comentarios `🔽 … 🔼`.  
-   La IA debe modificar solo el bloque indicado, nunca el archivo entero.  
-3. **Sin librerías externas** (CDN, npm, etc.) a menos que se solicite.  
-4. **Comentarios claros y en español** sobre cada función o bloque nuevo.  
-5. **Nomenclatura coherente**  
-   - Clases: kebab‑case (`.tabla-resultados`)  
-   - IDs & funciones JS: camelCase (`resultTable`, `calcularTotal`)  
-
-## 🚀 PROMPT BASE PARA IA
+## 📁 Estructura de carpetas
 
 ```
-• Seguí el formato y las reglas descritas en este README y en los encabezados de cada archivo.
-• Indica exactamente en qué bloques modificarás código.
-• Entrega únicamente los snippets nuevos o modificados, no el archivo completo.
+plantilla-app/
+├─ index.html          # Estructura visual
+├─ style.css           # Diseño (CSS)
+├─ app.js              # Lógica (JS)
+├─ .gitignore          # Archivos a excluir del repo
+├─ LICENSE             # MIT
+├─ README.md           # Esta guía
+│
+├─ /img/               # Imágenes e íconos estáticos
+├─ /modules/           # Scripts JS reutilizables (se importan desde app.js)
+├─ /data/              # Archivos de datos (JSON, CSV, etc.)
+├─ /docs/              # Documentación extensa, diagramas, mockups
+└─ /tests/             # Pruebas automáticas (Jest u otra)
 ```
+
+## 🧩 Reglas para IA y colaboradores
+
+1. **Separación estricta**
+   * `index.html`  = estructura y contenido visual (sin lógica ni estilos)
+   * `style.css`   = diseño (sin lógica)
+   * `app.js`      = lógica principal
+   * Archivos en `/modules/` cuando el código JS pueda reutilizarse
+2. **Bloques delimitados** con comentarios `🔽 … 🔼`.
+   * La IA debe modificar solo el bloque indicado, nunca sobreescribir todo el archivo.
+3. **Sin librerías externas** (CDN, npm, etc.) excepto si el autor las solicita.
+4. **Comentarios breves en español** antes de cada función o bloque nuevo.
+5. **Nomenclatura coherente**
+   * Clases CSS → kebab‑case (`.tabla-resultados`)
+   * IDs y funciones JS → camelCase (`resultTable`, `calcularTotal`)
+6. **Pull Requests pequeños** y descripciones claras (`feat: añadir export PDF`).
+
+## 🚀 Prompt base sugerido para Codex / ChatGPT
+
+```
+Usá la plantilla-app. Respetá:
+• Separación de archivos y bloques 🔽 … 🔼
+• Comentarios descriptivos
+• No uses librerías externas salvo pedido
+• Entregá solo los snippets modificados (no todo el archivo)
+```
+
+## 🧪 Tests (opcional)
+
+Si incluís Jest:
+
+* `npm install --save-dev jest`
+* Crear tests dentro de `/tests/` con nombre `*.test.js`
+* Ejecutar `npm test`
+
+---
+
+¡A clonar esta template y a codificar rápido! 💪
